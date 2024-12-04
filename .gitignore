@@ -1,8 +1,4 @@
 Images
 Augmented_Images
 scraped_images
-inception_resnet.pth
-known_face_embeddings.npy
-label_encoder_classes.npy
-svm_model.pkl
 serviceAccountKey.json

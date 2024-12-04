@@ -96,9 +96,8 @@ else:
     svm_model = SVC(kernel="linear", probability=True)
     svm_model.fit(face_embeddings, labels)
 
-    joblib.dump(svm_model, "svm_model.pkl")
-
-    np.save("label_encoder_classes.npy", dataset.label_encoder.classes_)
-    np.save("known_face_embeddings.npy", known_face_embeddings)
+    np.save("Model/label_encoder_classes.npy", dataset.label_encoder.classes_)
+    np.save("Model/known_face_embeddings.npy", known_face_embeddings)
+    joblib.dump(svm_model, "Model/svm_model.pkl")
 
     print("Model telah dilatih dan disimpan.")
